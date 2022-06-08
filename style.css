@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(270, 20%, 96%);
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  max-height: 100%;
+  height: 450px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 40px;
+}
+
+.mobile-anterior {
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  border-radius: 20px 20px 8px 8px;
+  width: 100%;
+  height: 60px;
+}
+.mobile-anterior-camera {
+  background-color: #ffff;
+  height: 20px;
+  width: 130px;
+  margin: auto;
+  border-radius: 0px 0px 30px 30px;
+}  
+.mobile-anterior-info {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-anterior-left {
+  display: flex;
+  width: 65%;
+  justify-content: space-around;
+}
+
+.uil-ellipsis-v {
+  margin-right: 15px;
+}
+
+.mobile-anterior-info .arrow-angle-left {
+  font-size: 20px;
+}
+
+.mobile-anterior-info img {
+  width: 25px;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.name {
+  font-size: 12px;
+}
+
+.okay {
+  font-size: 8px;
+  color: lightgray;
+}
+
+.mobile-trunk {
+  overflow: auto;
+  width: 100%;
+  flex-grow: 1;
+  border-radius: 0px 0px 20px 20px;
+  background-color: hsl(270, 20%, 96%);
+}
+
+.mobile-trunk .message {
+  font-size: 8px;
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.mobile-trunk .left p {
+  background-color: hsl(0, 14%, 91%);
+  color: hsl(276, 55%, 52%);
+  border-radius: 10px 10px 10px 5px;
+  padding: 7px;
+  margin-left: 10px;
+}
+
+.mobile-trunk .right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.photos {
+  margin-top: 7px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.photos img {
+  width: 38px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.mobile-trunk .right p {
+  background-color: white;
+  border-radius: 10px 10px 5px 10px;
+  padding: 7px;
+  margin-right: 10px;
+}
+
+.bill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+  margin-left: 10px;
+  margin-top: 7px;
+  color: white;
+  background-image: linear-gradient(
+    to left,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  padding: 7px;
+  border-radius: 10px 10px 10px 5px;
+}
+.bill-left {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.bill-left i {
+  color: hsl(312, 72%, 80%);
+}
+
+.bill p {
+  font-size: 8px;
+  margin-left: 5px;
+}
+
+.bill .amount {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.type-message {
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
+  width: 90%;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.type-message p {
+  font-size: 10px;
+  color: lightgray;
+  margin-left: 15px;
+}
+
+.type-message .send {
+  width: 30px;
+  height: 30px;
+  background-color: hsl(271, 36%, 24%);
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  border-radius: 100px;
+}
+
+.type-message .send i {
+  color: white;
+}
+
+.label-head,
+.label-text {
+  text-align: center;
+}
+
+.label-head {
+  color: hsl(271, 36%, 24%);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.label-text {
+  color: hsl(270, 7%, 64%);
+  font-size: 14px;
+  width: 70%;
+  margin: auto;
+  font-weight: normal;
+}
+
+.purpleshape {
+  background-image: linear-gradient(
+    to top left,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  width: 50%;
+  height: 400px;
+  align-self: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 0 0 1000px 0px;
+}
+
+.greyshape {
+  background-color: hsl(0, 14%, 91%);
+  width: 50%;
+  height: 400px;
+  align-self: flex-start;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 1000px 0px 0px 0px;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    flex-direction: row;
+  }
+
+  .label {
+    margin-left: 100px;
+  }
+
+  .label-head {
+    text-align: left;
+  }
+
+  .label-text {
+    width: 400px;
+    text-align: left;
+  }
+
+  .purpleshape {
+    width: 25%;
+    border-radius: 0 0 1000px 1000px;
+    height: 550px;
+  }
+
+  .greyshape {
+    width: 25%;
+    height: 550px;
+  }
+}
